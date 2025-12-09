@@ -4,10 +4,10 @@ Ultimate memory-leak hunting toolkit for OpenWrt &amp; embedded Linux
 High-precision LD_PRELOAD-based malloc/free hook + testing utilities specially crafted for resource-constrained embedded environments (routers, automotive, IoT).
 
 ## Features:
-• libmalloc_hook.so – accurate heap tracking, full backtrace, automatically filters musl popen false positives
-• leak_test           – reproduces a real-world 24-byte leak that starts 70 s after launch
-• test_malloc_hook    – stress test with threads, popen, strdup, calloc – everything that usually crashes a hook
-• memlogger            – lightweight long-term /proc/meminfo + AnonPages monitor
+ - libmalloc_hook.so – accurate heap tracking, full backtrace, automatically filters musl popen false positives
+ - leak_test         – reproduces a real-world 24-byte leak that starts 70 s after launch
+ - test_malloc_hook  – stress test with threads, popen, strdup, calloc – everything that usually crashes a hook
+ - memlogger         – lightweight long-term /proc/meminfo + AnonPages monitor
 
 Successfully used on real OpenWrt routers to catch and fix “memory slowly grows a few hundred KB per hour” issues.
 
