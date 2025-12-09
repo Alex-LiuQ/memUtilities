@@ -1,0 +1,8 @@
+*.o
+*.so
+*.so.*
+leak_test
+memlogger
+test_malloc_hook
+core.*
+*.log
